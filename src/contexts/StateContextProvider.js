@@ -11,11 +11,12 @@ export const StateContextProvider = ({ children }) => {
   const getResults = async (url) => {
     setLoading(true);
 
+            // 'x-rapidapi-key': process.env.REACT_APP_API_KEY,
     const res = await fetch(`${baseUrl}${url}`, {
       method: 'GET',
       headers: {
         'x-rapidapi-host': 'google-search3.p.rapidapi.com',
-        'x-rapidapi-key': process.env.REACT_APP_API_KEY,
+        'x-rapidapi-key': '935ebe5463mshb188df2844b6fe0p1000f9jsna0ef5d97856e',
       },
     });
 
